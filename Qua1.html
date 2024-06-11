@@ -104,7 +104,50 @@
         console.log(containSubstring(mainstring, substring2));
         */
 
-        
+
+        /*
+        // que 7
+        function repeatString(str, num){
+            return str.repeat(num) ;
+        }
+
+        let string = "Hello have a nice day          ";
+        console.log(repeatString(string, 3));
+
+
+        function rep(str, num){
+            if(num <= 0){
+                return '';
+            }
+            return str.repeat(num);
+        }
+
+        console.log(rep("hello", 9));
+
+        */
+
+        function firstNonRepeatingCharacter(str) {
+            const charCount = {};
+
+            // First pass: Count the occurrences of each character
+            for (let char of str) {
+                charCount[char] = (charCount[char] || 0) + 1;
+            }
+
+            // Second pass: Find the first character with a count of one
+            for (let char of str) {
+                if (charCount[char] === 1) {
+                return char;
+                }
+            }
+
+            return null; // Return null if no non-repeating character is found
+            }
+
+            // Example usage
+            const testString = "swiigswg";
+            console.log(firstNonRepeatingCharacter(testString)); // Output: "w"
+
     </script>
 </body>
 </html>
