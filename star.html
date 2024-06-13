@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: antiquewhite;
+        width: 100%;
+      }
+      h3 {
+        text-align: center;
+        margin: 20px;
+      }
+      div{
+        margin-top: 5px;
+      }
+      span {
+        margin-left: 35px;
+        
+      }
+      input {
+        width: 90%;
+        margin-left: 30px;
+        padding: 3px;
+        border: none;
+        outline: none;
+        margin-top: 3px;
+      }
+      #btn{
+        width: auto;
+        padding: 7px 23px;
+        color: white;
+        font-size: 19px;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 20px 30px;
+        background: rgba(0, 128, 0, 0.82);
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h3>Student Data</h3>
+      <div>
+        <span>Name :</span>
+        <input type="text" id="name" required />
+      </div>
+
+      <div>
+        <span>Roll Num :</span>
+        <input type="number" id="roll" required/>
+      </div>
+
+      <div>
+        <span>Pentege :</span>
+        <input type="number" id="per" required />
+      </div>
+
+      <div>
+        <span>School :</span>
+        <input type="text" id="school" required/>
+      </div>
+
+      <input type="button"  id="btn" value="Add" onclick="add()"/>
+    </form>
+
+    <div id="demo"></div>
+    <script>
+        let student = [];
+        
+        print();
+        function print(){
+            let text = '';
+
+            text += "<table>"
+
+            text += `<tr>
+                    <th>Name</th>
+                    <th>Roll Num</th>
+                    <th>Pentege</th>
+                    <th>School</th>
+                    </tr>`
+
+            student.forEach(function(v,i){
+                text += `<tr>
+                        <td>${v.name}</td>
+                        <td>${v.roll}</td>
+                        <td>${v.per}</td>
+                        <td>${v.school}</td>
+                        </tr>
+                `
+            })
+            document.getElementById("demo").innerHTML = text;
+
+            text += "</table>";
+        }
+
+        function add(){
+            let name = document.getElementById("name").value;
+            let roll = document.getElementById("roll").value;
+            let per = document.getElementById("per").value;
+            let school = document.getElementById("school").value;
+
+
+            let d = {
+                name : name,
+                per : per,
+                roll : roll,
+                school : school
+            };
+
+            student.push(d);
+            print();
+        }
+    </script>
+  </body>
+</html>
