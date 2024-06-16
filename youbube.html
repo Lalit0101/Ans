@@ -20,13 +20,31 @@
 
 
 
-        let arrNumber = [12,13,45,676,234,789,987,345,10];
+        // let arrNumber = [12,13,45,676,234,789,987,345,10];
 
-        let max = arrNumber.reduce(function(p,c){
-            return p > c ? p : c;
-        })
+        // let max = arrNumber.reduce(function(p,c){
+        //     return p > c ? p : c;
+        // })
 
-        document.getElementById("demo").innerHTML = max;
+        // document.getElementById("demo").innerHTML = max;
+
+
+
+        let arrNumber = [2,7,5,9];
+
+        let larvalue = function(arr){
+            first = Math.max(...arr);
+            index = arr.indexOf(first);
+
+            arr.splice(index,1);
+
+            last = Math.max(...arr);
+            return last;
+        }
+    
+        document.getElementById("demo").innerHTML = larvalue(arrNumber);
+        
+        
 
     </script>
 </body>
