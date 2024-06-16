@@ -9,7 +9,9 @@
     <div id="demo"></div>
     <script>
         // let arrNumber = [1,2,5,2,6,2,,8,8,4,1,0];
-        // let duplicate = arrNumber.filter(function(v, i, arr){
+
+        // let arr = ["apple", "banana", "apple", "banana", "water", "hathi", "apple"]
+        // let duplicate = arr.filter(function(v, i, arr){
         //     return arr.indexOf(v) !== i;
         // });
 
@@ -18,7 +20,14 @@
 
 
 
-        
+        let arrNumber = [12,13,45,676,234,789,987,345,10];
+
+        let max = arrNumber.reduce(function(p,c){
+            return p > c ? p : c;
+        })
+
+        document.getElementById("demo").innerHTML = max;
+
     </script>
 </body>
 </html>
