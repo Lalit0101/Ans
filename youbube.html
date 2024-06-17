@@ -261,7 +261,29 @@
 
 
 
+		// let input = prompt("enter value");
+
+		// let clastofan = input * 1.8 + 32;
+		// console.log(clastofan);
+
+		// let fantocas = 5/9 * (input-32);
+		// console.log(fantocas);
+
+
+
 		
+		let input = prompt("enter string");
+
+		let lettarcapital = (str)=>{
+			let newstr = str.split(" ");
+
+			let newarr = newstr.map((value)=>{
+				return value.charAt(0).toUpperCase() + value.slice(1);
+			});
+			return newarr.join(" ");
+		}
+		
+		console.log(lettarcapital(input))
     </script>
   </body>
 </html>
