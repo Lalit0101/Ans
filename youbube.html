@@ -1,198 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="demo"></div>
     <div id="demo1"></div>
     <script>
-        // let arrNumber = [1,2,5,2,6,2,,8,8,4,1,0];
+      // let arrNumber = [1,2,5,2,6,2,,8,8,4,1,0];
 
-        // let arr = ["apple", "banana", "apple", "banana", "water", "hathi", "apple"]
-        // let duplicate = arr.filter(function(v, i, arr){
-        //     return arr.indexOf(v) !== i;
-        // });
+      // let arr = ["apple", "banana", "apple", "banana", "water", "hathi", "apple"]
+      // let duplicate = arr.filter(function(v, i, arr){
+      //     return arr.indexOf(v) !== i;
+      // });
 
-        // document.getElementById("demo").innerHTML = duplicate;
+      // document.getElementById("demo").innerHTML = duplicate;
 
+      // let arrNumber = [12,13,45,676,234,789,987,345,10];
 
+      // let max = arrNumber.reduce(function(p,c){
+      //     return p > c ? p : c;
+      // })
 
+      // document.getElementById("demo").innerHTML = max;
 
-        // let arrNumber = [12,13,45,676,234,789,987,345,10];
+      // let arrNumber = [2,7,5,9];
 
-        // let max = arrNumber.reduce(function(p,c){
-        //     return p > c ? p : c;
-        // })
+      // let larvalue = function(arr){
+      //     first = Math.max(...arr);
+      //     index = arr.indexOf(first);
 
-        // document.getElementById("demo").innerHTML = max;
+      //     arr.splice(index,1);
 
+      //     last = Math.max(...arr);
+      //     return last;
+      // }
 
+      // document.getElementById("demo").innerHTML = larvalue(arrNumber);
 
-        // let arrNumber = [2,7,5,9];
+      // let arr = [
+      //     {name: "king", age: 43},
+      //     {name: "ronak", age: 34},
+      //     {name: "rajesh", age: 64},
+      //     {name: "keyur", age: 54},
+      //     {name: "jayesh", age: 14},
+      // ];
 
-        // let larvalue = function(arr){
-        //     first = Math.max(...arr);
-        //     index = arr.indexOf(first);
+      // //filter and find diffrention
 
-        //     arr.splice(index,1);
+      // let filterindex = arr.filter(function(i){
+      //     return i.age > 30;
+      // });
 
-        //     last = Math.max(...arr);
-        //     return last;
-        // }
-    
-        // document.getElementById("demo").innerHTML = larvalue(arrNumber);
-        
-        
-        // let arr = [
-        //     {name: "king", age: 43},
-        //     {name: "ronak", age: 34},
-        //     {name: "rajesh", age: 64},
-        //     {name: "keyur", age: 54},
-        //     {name: "jayesh", age: 14},
-        // ];
+      // console.log(filterindex);
 
-        // //filter and find diffrention
+      // const arrNum = [1,2,3,4,6,7,8,10,5,120];
 
-        // let filterindex = arr.filter(function(i){
-        //     return i.age > 30;
-        // });
+      // const miss = [];
 
-        // console.log(filterindex);
+      // const missvalue = function(arr){
+      //     const minvalue = Math.min(...arr)
+      //     const maxvalue = Math.max(...arr)
+      //     for(let i=minvalue; i<maxvalue; i++){
+      //         if(arr.indexOf(i)<0){
+      //             miss.push(i);
+      //         }
+      //     }
+      //     return miss;
+      // }
 
+      // console.log(missvalue(arrNum));
 
+      // let number = [1,2,5,48,57,64,9,14,54,12];
 
+      // let even = number.filter(function(item){
+      //     return item % 2 == 0;
+      // });
 
-        // const arrNum = [1,2,3,4,6,7,8,10,5,120];
+      // let odd = number.filter(function(item){
+      //     return item % 2 == 1;
+      // });
 
-        // const miss = [];
+      // document.getElementById("demo").innerHTML = even;
 
-        // const missvalue = function(arr){
-        //     const minvalue = Math.min(...arr)
-        //     const maxvalue = Math.max(...arr)
-        //     for(let i=minvalue; i<maxvalue; i++){
-        //         if(arr.indexOf(i)<0){
-        //             miss.push(i);
-        //         }
-        //     }
-        //     return miss;
-        // }
+      // document.getElementById("demo1").innerHTML = odd;
 
-        // console.log(missvalue(arrNum));
+      // let arr = [12,13,1,23,43,5,3];
 
+      // let sum = arr.reduce(function(p,c){
+      //     return p + c;
+      // });
 
+      // document.getElementById("demo").innerHTML = sum;
 
+      // let user = prompt("Enter Number : ");
 
+      // let fact = 1;
 
+      // if(user < 0){
+      //     console.log(`Factorial is ${user}not possibale`);
+      // }else{
+      //     for(let i=1; i<=user; i++){
+      //         fact = fact * i;
+      //     }
+      //     console.log(`factorial of ${user} is ${fact}`);
+      // }
 
-        // let number = [1,2,5,48,57,64,9,14,54,12];
-
-        // let even = number.filter(function(item){
-        //     return item % 2 == 0;
-        // });
-
-        // let odd = number.filter(function(item){
-        //     return item % 2 == 1;
-        // });
-
-        // document.getElementById("demo").innerHTML = even;
-
-        // document.getElementById("demo1").innerHTML = odd;
-
-
-
-
-
-        // let arr = [12,13,1,23,43,5,3];
-
-        // let sum = arr.reduce(function(p,c){
-        //     return p + c;
-        // });
-
-        // document.getElementById("demo").innerHTML = sum;
-
-
-
-
-
-        // let user = prompt("Enter Number : ");
-
-        // let fact = 1;
-
-        // if(user < 0){
-        //     console.log(`Factorial is ${user}not possibale`);
-        // }else{
-        //     for(let i=1; i<=user; i++){
-        //         fact = fact * i;
-        //     }
-        //     console.log(`factorial of ${user} is ${fact}`);
-        // }
-
-
-
-        // first method
-        // let arr = prompt("Enter name:");
-        
-        // arr = arr.toLowerCase();
-        // if(arr=="a" || arr=="e" || arr=="i" || arr=="o" || arr=="u"){
-        //     console.log(`${arr} is vowel`);
-        // }else{
-        //     console.log(`${arr} is not vowel`);
-        // }
-
-
-        //second method
-
-        // let string = prompt("enter number");
-
-        // let vowel = ['a','e','i','o','u'];
-
-        // let count = (str)=>{
-        //     let value = 0;
-        //     for(let letters of str.toLowerCase()){
-        //         if(vowel.includes(letters)){
-        //             value++;
-        //         }
-        //     }
-        //     return value;
-        // }
-
-        // console.log(count(string));
-
-        
-        //method first
-        // let reversStr = (str) =>{
-        //     let newStr = "";
-        //     for(let i=str.length-1; i>=0; i--){
-        //         newStr += str[i];
-        //     }
-        //     return newStr;
-        // }
-        // console.log(reversStr("lalit"));
-
-
-        //method secound
-
-        // let reversStr = (str) => {
-        //     str = str.toLowerCase();
-        //     // let strToArray = str.split("");
-        //     // let revers = strToArray.reverse();
-        //     // let join = revers.join("");
-
-        //     let rever = str.split("").reverse().join(""); 
-
-        //     return rever
-        // }
-        // console.log(reversStr("Lalit"));
-
-
-
-
-
-
-        
+      // first method
+      // let arr = prompt("Enter name:");
+
+      // arr = arr.toLowerCase();
+      // if(arr=="a" || arr=="e" || arr=="i" || arr=="o" || arr=="u"){
+      //     console.log(`${arr} is vowel`);
+      // }else{
+      //     console.log(`${arr} is not vowel`);
+      // }
+
+      //second method
+
+      // let string = prompt("enter number");
+
+      // let vowel = ['a','e','i','o','u'];
+
+      // let count = (str)=>{
+      //     let value = 0;
+      //     for(let letters of str.toLowerCase()){
+      //         if(vowel.includes(letters)){
+      //             value++;
+      //         }
+      //     }
+      //     return value;
+      // }
+
+      // console.log(count(string));
+
+      //method first
+      // let reversStr = (str) =>{
+      //     let newStr = "";
+      //     for(let i=str.length-1; i>=0; i--){
+      //         newStr += str[i];
+      //     }
+      //     return newStr;
+      // }
+      // console.log(reversStr("lalit"));
+
+      //method secound
+
+      // let reversStr = (str) => {
+      //     str = str.toLowerCase();
+      //     // let strToArray = str.split("");
+      //     // let revers = strToArray.reverse();
+      //     // let join = revers.join("");
+
+      //     let rever = str.split("").reverse().join("");
+
+      //     return rever
+      // }
+      // console.log(reversStr("Lalit"));
+
+      let string = prompt("Enter value");
+
+      string = string.toLowerCase();
+
+      function palondrom() {
+        let rever = string.split("").reverse().join("");
+
+        if (rever === string) {
+          console.log(`${string} and ${rever} are plaindrome`);
+        } else {
+          console.log(`${string} and ${rever} are not plaindrome`);
+        }
+      }
+
+      palondrom();
     </script>
-</body>
+  </body>
 </html>
