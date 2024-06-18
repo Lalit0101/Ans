@@ -142,9 +142,31 @@
 
 
 
-      let arr = prompt('enter number');
+      // let revers = (str)=>{
+      //   str = str.toLowerCase();
 
-      let 
+      //   let strToArray = str.split('').reverse().join('');
+
+      //   return strToArray;
+        
+      //}
+      // console.log(revers("Lalit"));
+
+
+      let string = prompt("Enter number");
+      string = string.toLowerCase();
+
+      function palondrom(){
+        let rever = string.split('').reverse().join('');
+
+        if(rever == string){
+          console.log("okk");
+        }else{
+          console.log("not okk");
+        }
+      }
+
+      palondrom();
     </script>
   </body>
 </html>
